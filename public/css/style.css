@@ -1,0 +1,536 @@
+/* [ -- Master Stylesheet -- ] */
+/* ##################################################
+
+:: Template Name: South - Real Estate Agency Template
+:: Author: Colorlib
+:: Author URL: https://colorlib.com
+:: Version: 1.0
+:: Created: 15 April 2018
+:: Last Updated: 25 April 2018
+
+################################################## */
+/* ##### Index of Stylesheet #####
+
+:: 1.0 Import Fonts 
+:: 2.0 Import All CSS
+:: 3.0 Base CSS
+:: 4.0 Preloader Area CSS
+:: 5.0 Scroll Up Area CSS
+:: 6.0 Section Heading Area CSS
+:: 7.0 South Button CSS
+:: 8.0 Header Area CSS
+:: 9.0 Welcome Area CSS
+:: 10.0 Advanced Search Area
+:: 11.0 Single Property Area CSS
+:: 12.0 Testimonials Area CSS
+:: 13.0 Editor Area CSS
+:: 14.0 Call to Action CSS
+:: 15.0 Footer Area CSS
+:: 16.0 Breadcumb Area CSS
+:: 17.0 About Us Area CSS
+:: 18.0 Team Member Area CSS
+:: 19.0 Listings Area CSS
+:: 20.0 Blog Area CSS 
+:: 21.0 Contact Area CSS
+:: 22.0 Shortcode Area CSS
+
+##### Index of Stylesheet ##### /*
+
+/* :: 1.0 Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+/* :: 2.0 Import All CSS */
+@import url(css/bootstrap.min.css);
+@import url(css/animate.css);
+@import url(css/owl.carousel.css);
+@import url(css/classy-nav.min.css);
+@import url(css/magnific-popup.css);
+@import url(css/font-awesome.min.css);
+@import url(css/themify-icons.css);
+@import url(css/nice-select.css);
+@import url(css/jquery-ui.min.css);
+/* :: 3.0 Base CSS */
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.section-padding-100 {
+    padding: 100px 0;
+}
+
+.section-padding-50 {
+    padding: 50px 0;
+}
+
+.section-padding-50-0 {
+    padding: 50px 0 0 0;
+}
+
+.section-padding-100-70 {
+    padding: 100px 0 70px;
+}
+
+.section-padding-100-50 {
+    padding: 100px 0 50px;
+}
+
+.section-padding-100-0 {
+    padding: 100px 0 0;
+}
+
+.section-padding-0-100 {
+    padding: 0 0 100px;
+}
+
+.section-padding-100-20 {
+    padding: 100px 0 20px 0;
+}
+
+/* :: 6.0 Section Heading Area CSS */
+.section-heading {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.section-heading img {
+    margin-bottom: 10px;
+}
+.section-heading h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .section-heading h2 {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .section-heading h2 {
+        font-size: 24px;
+    }
+}
+.section-heading p {
+    color: #947054;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* :: 7.0 South Button CSS */
+
+/* :: 11.0 Single Property Area CSS */
+.single-featured-property {
+    position: relative;
+    z-index: 1;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    overflow: hidden;
+}
+.single-featured-property .property-thumb {
+    position: relative;
+    z-index: 1;
+}
+.single-featured-property .property-thumb .tag span {
+    height: 35px;
+    padding: 0 20px;
+    background-color: #947054;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.single-featured-property .property-thumb .list-price p {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    color: #947054;
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+    margin-bottom: 0;
+    line-height: 1;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.single-featured-property .property-content {
+    padding: 5px;
+    border: 1px solid #e1dddd;
+}
+.single-featured-property .property-content h5 {
+    font-size: 18px;
+}
+.single-featured-property .property-content p {
+    margin-bottom: 30px;
+}
+.single-featured-property .property-content .location {
+    color: #947054;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.single-featured-property .property-content .location img {
+    margin-right: 10px;
+    display: inline-block !important;
+    width: auto !important;
+}
+.single-featured-property .property-content .property-meta-data span {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 5px;
+    color: #838383;
+}
+.single-featured-property .property-content .property-meta-data img {
+    margin-right: 10px;
+    display: inline-block !important;
+    width: auto !important;
+}
+@media only screen and (max-width: 767px) {
+    .single-featured-property .property-content .property-meta-data img {
+        margin-right: 0;
+    }
+}
+.single-featured-property:hover,
+.single-featured-property:focus {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+.single-featured-property:hover .tag span,
+.single-featured-property:focus .tag span {
+    background-color: #000000;
+    color: #ffffff;
+}
+.single-featured-property:hover .list-price p,
+.single-featured-property:focus .list-price p {
+    background-color: #947054;
+    color: #ffffff;
+}
+
+.pagination .page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.pagination .page-item:last-child .page-link {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.pagination .page-item.active .page-link {
+    color: #ffffff;
+    background-color: #323232;
+}
+.pagination .page-link {
+    padding: 0;
+    margin-left: 3px;
+    line-height: 20px;
+    color: #323232;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: #947054;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.pagination .page-link.active {
+    background-color: #000000;
+}
+.pagination .page-link:focus,
+.pagination .page-link:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.column {
+    position: relative;
+    width: 50%;
+    min-height: 1px;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+@media (min-width: 576px) {
+    .column {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    .column {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .column {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+/* 20. preloader */
+/* line 600, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloader {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    margin: 0 auto;
+}
+
+/* line 616, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloader .preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 5px;
+    border-top-color: #0a0a0a;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    background-color: #fff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+/* line 638, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloader .preloader-circle2 {
+    border-top-color: #050505;
+}
+
+/* line 641, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloader .preloader-img {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 6px;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+/* line 659, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloader .preloader-img img {
+    max-width: 55px;
+}
+
+/* line 662, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloader .pere-text strong {
+    font-weight: 800;
+    color: #dca73a;
+    text-transform: uppercase;
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+}
+
+/* 20. preloader */
+/* line 600, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloaders {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    margin: 0 auto;
+}
+
+/* line 616, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloaders .preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 5px;
+    border-top-color: #0f0f0f;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    background-color: #fff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+/* line 638, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloaders .preloader-circle2 {
+    border-top-color: #070707;
+}
+
+/* line 641, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloaders .preloader-img {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 6px;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+/* line 659, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloaders .preloader-img img {
+    max-width: 55px;
+}
+
+/* line 662, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.preloaders .pere-text strong {
+    font-weight: 800;
+    color: #dca73a;
+    text-transform: uppercase;
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+}
+
+.realestate-filter {
+    background: #fdfdfc;
+}
+.realestate-filter .realestate-filter-wrap {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    z-index: 6;
+    position: relative;
+}
+.realestate-filter a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: #fff;
+    background: #fff;
+    color: #080808;
+}
+.realestate-filter a.active {
+    background: #080808;
+    color: #fff;
+}

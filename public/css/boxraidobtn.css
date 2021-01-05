@@ -1,0 +1,151 @@
+.cols {
+    position: relative;
+    width: 10%;
+    min-height: 1px;
+    padding: 1px;
+    margin: 2px;
+}
+
+@media (min-width: 576px) {
+    .cols {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    .cols {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .cols {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+.containers {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+}
+
+/**
+    Component
+  **/
+
+label {
+    width: 100%;
+}
+
+.panel-body {
+    width: 100%;
+}
+
+.card-input-element {
+    display: none;
+}
+
+.card-input {
+    margin: 5px;
+    padding: 1px;
+}
+
+.card-input:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+    color: #00b70c;
+}
+
+.mains {
+    width: 100%;
+    height: 30px;
+}
+.seat {
+    width: 2%;
+    height: 100%;
+}
+
+.coss {
+    position: relative;
+    width: 33%;
+    min-height: 1px;
+
+    padding: 1px;
+    margin: 2px;
+}
+
+@media (min-width: 576px) {
+    .colss {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    .colss {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .colss {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+.seatsell {
+    color: #182c4e;
+    height: 100%;
+    width: 5%;
+    line-height: 27px;
+    margin: 3px;
+    float: left;
+    text-align: center;
+    outline: none;
+    font-size: 13px;
+}
+
+div.seat.available {
+    background-color: #949494;
+}
+div.seat.focused {
+    background-color: #00b70c;
+    border: none;
+}
+div.seat.selected {
+    background-color: #00b70c;
+}
+div.seat.unavailable {
+    background-color: #d00000;
+    cursor: not-allowed;
+}
+
+.rows {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    overflow-x: auto;
+}
